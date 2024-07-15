@@ -1,3 +1,11 @@
+import Gnb from '@/Curriculums/components/Gnb';
+
 export default function Home() {
-  return <div>hello</div>;
+  return (
+    <div>
+      <Gnb />
+    </div>
+
+    
+  );
 }
