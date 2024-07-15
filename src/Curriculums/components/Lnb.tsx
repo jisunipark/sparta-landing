@@ -16,10 +16,3 @@ export default function Lnb() {
     </S.Lnb>
   );
 }
-
-/* 
-  Item
-    - span
-    - div
-
-*/

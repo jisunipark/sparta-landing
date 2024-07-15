@@ -1,3 +1,4 @@
+import Details from '@/Curriculums/components/Details';
 import Gnb from '@/Curriculums/components/Gnb';
 import Hero from '@/Curriculums/components/Hero';
 import Lnb from '@/Curriculums/components/Lnb';
@@ -8,6 +9,7 @@ export default function Home() {
       <Gnb />
       <Hero />
       <Lnb />
+      <Details />
     </div>
   );
 }
