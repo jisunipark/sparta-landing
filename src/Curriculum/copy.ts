@@ -1,63 +1,202 @@
-import { StaticImageData } from 'next/image';
-import stackImg01 from '../../public/assets/project_logo1.png';
-import stackImg02 from '../../public/assets/project_logo2.png';
-import stackImg03 from '../../public/assets/project_logo3.png';
-
-export const lnbItems: string[] = ['프로젝트', '트랙 소개', '커리큘럼', '취업 서포트', '모집 개요'];
-
-export type ProjectExample = {
+export const curriculumDetails: {
   id: string;
   title: string;
   description: string;
-  video: string;
-  techStack: StaticImageData;
-  learnMore: string[];
-};
-
-export const ProjectExamples: ProjectExample[] = [
+  tag: string[];
+  details: {
+    subheading?: string;
+    title: string;
+    goals: string[];
+  }[][];
+}[] = [
   {
     id: '01',
-    title: '아이템 시뮬레이터 서비스',
+    title: '웹 개발 미니 프로젝트',
     description:
-      '현재 게임 아이템 상황 및 다른 사람들의 게임 아이템 상황을\n볼 수 있도록 정보를 제공하는 서비스',
-    video: '/Users/teamspartaesg/Desktop/sparta-landing/public/assets/resized_game_video_1.mp4',
-    techStack: stackImg01,
-    learnMore: [
-      '웹 프레임워크 - Node.js에서 가장 대표적인 웹 프레임워크인 Express.js 사용',
-      '패키지 매니저 - 빠른 설치 속도와 우수한 패키지 관리를 지원하는 npm 또는 yarn 패키지 매니저 사용',
-      '모듈 시스템 - 최신 JS 문법을 지원하는 ES6 모듈 시스템 또는 기본 CommonJS 모듈 시스템을 사용',
-      '데이터베이스 - MongoDB Cloud에서 대여한 대표적인 NoSQL인 MongoDB Atlas 사용',
-      'ODM - MongoDB의 데이터를 쉽게 읽고 쓰게 해주는 mongoose ODM 사용',
+      '웹 개발 기초 강의를 수강하며 웹 개발 전반의 흐름을 이해하고\n이를 활용한 미니 프로젝트를 통해 기본기를 다지고 협업 경험을 합니다.',
+    tag: ['1주 과정', '미니 프로젝트', '실시간 세션'],
+    details: [
+      [
+        {
+          subheading: '미니 프로젝트',
+          title: '팀 소개 페이지',
+          goals: ['웹 페이지 동작 원리 이해', 'Git, Github 실습 (현업을 위한 버전 관리)'],
+        },
+        {
+          subheading: '실시간 세션',
+          title: '개발자 직무 이해',
+          goals: [
+            '대기업 출신 개발자가 소개하는 개발자의 모든 것',
+            '개발 역량을 베이스로 할 수 있는 커리어 패스',
+          ],
+        },
+      ],
     ],
   },
   {
     id: '02',
-    title: '데이터베이스 모델링',
-    description:
-      '로그인/인증 기능을 통해 게임 아이템 시뮬레이터 고도화\n(아이템 테이블과 유저 데이터베이스 모델링)',
-    video: '/Users/teamspartaesg/Desktop/sparta-landing/public/assets/resized_game_video_2.mp4',
-    techStack: stackImg02,
-    learnMore: [
-      '웹 프레임워크 - Node.js에서 가장 대표적인 웹 프레임워크인 Express.js 사용',
-      '패키지 매니저 - 빠른 설치 속도와 우수한 패키지 관리를 지원하는 npm 또는 yarn 패키지 매니저 사용',
-      '모듈 시스템 - 기본 모듈 시스템(CommonJS, type: "commonjs") 또는 ES6 부터 도입 된 모듈 시스템(ESModule, type: "module") 이용',
-      '데이터베이스 - AWS RDS를 이용하여 MySQL사용',
-      'ORM(Object Relational Mapping) : MySQL의 데이터를 쉽게 읽고 쓰게 해주는 Prisma 사용',
+    title: 'Javascript 언어 기초와 활용',
+    description: '선택한 트랙의 언어 기본기와 프로그래밍 기초를 학습 합니다.',
+    tag: ['2주 과정', '실시간 세션'],
+    details: [
+      [
+        {
+          subheading: '실시간 세션',
+          title: '좋은 개발자의 비밀',
+          goals: [
+            '개발사 대표가 소개하는 좋은 개발자의 자질',
+            '주니어 개발자로서의 차별점을 가질 수 있는 방법',
+          ],
+        },
+      ],
+      [
+        {
+          title: 'Javascript 언어 기초, 심화 문법 이해',
+          goals: [
+            '자료형과 연산자의 이해',
+            '조건문, 반복문 이해와 활용',
+            '변수, 함수 객체의 이해와 활용',
+            '콜백 함수와 동기/비동기 처리',
+          ],
+        },
+        {
+          title: 'CS 기초 강화',
+          goals: [
+            '1일 1알고리즘 문제풀이',
+            '알고리즘 실시간 세션 진행',
+            '배열, 리스트, 스택, 큐 등 자료구조 학습',
+          ],
+        },
+      ],
     ],
   },
   {
-    id: '01',
-    title: '타워 디펜스 게임',
+    id: '03',
+    title: 'Node.js 기초와 활용',
     description:
-      '실제 게임 서버를 구현하고 클라이언트 코드에 연결하기\n(인증/관리, WebSocket 통신, 클라이언트 연동)',
-    video: '/Users/teamspartaesg/Desktop/sparta-landing/public/assets/resized_game_video_3.mp4',
-    techStack: stackImg03,
-    learnMore: [
-      '게임 서버의 주요 기능인 회원가입, 로그인, 게임 데이터 관리 등을 설계',
-      'Node.js에서 WebSocket 서버를 구축하고 클라이언트와 서버 간의 실시간 데이터 전송을 구현',
-      'JWT를 이용한 사용자 인증을 구현하고 유저 별 게임 데이터를 관리',
-      '서버에서 게임 상태를 관리하고 클라이언트와 동기화하고 게임 오버 조건, 스코어 관리 기능 구현',
-      'Git을 사용해 소스 코드 버전 관리를 하고 제공된 게임 클라이언트를 통해 서버와 WebSocket 기반으로 통신',
+      '게임 서버 개발의 기본부터 응용까지 배우고, 실습을 통해 REST API 기반 게임 서버를 구축하는 과정을 진행합니다.',
+    tag: ['4주 과정', '프로젝트'],
+    details: [
+      [
+        {
+          subheading: '프로젝트',
+          title: '풋살 온라인 게임',
+          goals: [
+            '실제 게임과 유사하게 선수 데이터 사전 준비',
+            '준비된 선수 데이터 기반으로 랜덤하게 선수 뽑는 기능 구현',
+            '뽑은 선수들로 나만의 팀을 구성하고 관리',
+            '간단한 게임 로직을 통해 유저 간 축구 경기를 진행 후 랭킹 비교',
+          ],
+        },
+        {
+          subheading: '실시간 세션',
+          title: '게임 서버 개발자가 되기 위해서 알아야 할 것',
+          goals: ['게임 서버를 위한 네트워크', 'TCP / 소켓 프로그래밍 이해', '패킷 분석 실습'],
+        },
+      ],
+    ],
+  },
+  {
+    id: '04',
+    title: 'Node.js 심화와 적용',
+    description:
+      '게임 서버 실무에 활용되는 내용을 배우고, 실제 게임 클라이언트와 WebSocket 기반으로 통신하는 게임 서버를 구현해 봅니다.',
+    tag: ['2주 과정', '프로젝트', '실시간 세션'],
+    details: [
+      [
+        {
+          subheading: '프로젝트',
+          title: '타워 디펜스 게임',
+          goals: [
+            '회원가입 / 로그인 기능 구현을 통한 인증 및 인가',
+            'WebSocket을 이용한 클라이언트-서버 간 실시간 통신',
+            '유저 별 게임 데이터 관리 (몬스터 레벨, 스코어, 타워 위치 등)',
+            '서버 주도로 클라이언트에 상태 동기화',
+            '현업 개발자의 코드 리뷰 및 개선점 피드백',
+          ],
+        },
+        {
+          subheading: '실시간 세션',
+          title: '게임 서버 개발자가 되기 위해서 알아야 할 것',
+          goals: [
+            '멀티스레드에 대한 개념 및 동기화 기법 소개',
+            'OSI 7 계층 기반 네트워크 이론 공부 및 프로토콜 분석',
+            '현업에 적용할 수 있는 고급 데이터베이스 이론 및 테크닉',
+          ],
+        },
+      ],
+    ],
+  },
+  {
+    id: '05',
+    title: '게임 서버의 전반적인 이해와 활용',
+    description:
+      'TCP 서버를 배워 클라이언트와 연동하는 법을 배워 신입 개발자로서 경쟁력을 갖춥니다.',
+    tag: ['3주 과정', '프로젝트'],
+    details: [
+      [
+        {
+          title: 'TCP 서버 이해와 활용',
+          goals: [
+            "Node.js 'net' 모듈을 활용한 TCP 서버 구현",
+            '게임 서버에서의 DB 사용을 배워 직접 관리',
+            '유저, 게임 클래스의 인스턴스로 세션 관리',
+            '클래스 메서드를 활용한 유저들의 레이턴시 측정',
+            '측정된 레이턴시를 기준으로 유저들의 위치를 효율적으로 계산',
+          ],
+        },
+      ],
+    ],
+  },
+  {
+    id: '06',
+    title: '최종 프로젝트',
+    description:
+      '실제 유저가 있는 서비스를 론칭하여 단순구현이 아니라 운영-보수-개선의 경험을 합니다.',
+    tag: ['6주 과정', '프로젝트'],
+    details: [
+      [
+        {
+          subheading: '1주차',
+          title: '프로젝트 기획 및 기술 문서 작성',
+          goals: [
+            '기획 및 와이어프레임 설계',
+            '코드 컨벤션 정의',
+            'API 명세서 작성',
+            'ERD 모델 작업',
+          ],
+        },
+        {
+          subheading: '2-3주차',
+          title: 'MVP 개발',
+          goals: [
+            '핵심 기능 구현',
+            '회원가입과 로그인 구현',
+            '테스트 코드 작성',
+            '중간 발표: 개발 진행 상황 점검 및 피드백 반영',
+          ],
+        },
+        {
+          subheading: '4주차',
+          title: '성능최적화 및 코드개선',
+          goals: [
+            '코드 병합 및 정리',
+            'Docker 배포 (CI/CD)',
+            '유저테스트 및 개선 작업',
+            '웹 성능 최적화',
+          ],
+        },
+        {
+          subheading: '5주차',
+          title: '최종발표회 및 수료식',
+          goals: [
+            '최종 테스트 및 개선 작업',
+            '트러블 슈팅',
+            '최종 발표회 진행',
+            '이력서 특강 및 이력서 준비',
+          ],
+        },
+      ],
     ],
   },
 ];
