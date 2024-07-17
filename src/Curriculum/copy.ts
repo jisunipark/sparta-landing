@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image';
-import stackImg01 from '../../../public/assets/project_logo1.png';
-import stackImg02 from '../../../public/assets/project_logo2.png';
-import stackImg03 from '../../../public/assets/project_logo3.png';
+import stackImg01 from '../../public/assets/project_logo1.png';
+import stackImg02 from '../../public/assets/project_logo2.png';
+import stackImg03 from '../../public/assets/project_logo3.png';
 
 export const lnbItems: string[] = ['프로젝트', '트랙 소개', '커리큘럼', '취업 서포트', '모집 개요'];
 

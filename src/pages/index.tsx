@@ -1,15 +1,15 @@
-import Details from '@/Project/Details';
-import Hero from '@/Hero/components/Hero';
-import Lnb from '@/Lnb/components/Lnb';
-import Gnb from '@/Gnb/components/Gnb';
+import Gnb from '@/Gnb/template';
+import Hero from '@/Hero/template';
+import Lnb from '@/Lnb/template';
+import Details from '@/Project/components/Details';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Gnb />
       <Hero />
       <Lnb />
       <Details />
-    </div>
+    </>
   );
 }

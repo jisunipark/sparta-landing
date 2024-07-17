@@ -1,4 +1,4 @@
-import * as S from '@/Curriculums/styles/Common.style';
+import * as S from '@/Hero/style';
 
 export function HeroInfo({ label, children }: { label: string; children: string }) {
   return (
