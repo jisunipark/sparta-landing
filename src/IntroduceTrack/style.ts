@@ -1,5 +1,7 @@
 import styled from '@emotion/styled';
 
+/* TODO style 이름 통일하기 */
+
 export const Background = styled.div`
   display: flex;
   flex-direction: column;
