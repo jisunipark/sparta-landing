@@ -1,4 +1,4 @@
-import * as S from '@/Curriculums/style';
+import * as S from '@/Curriculum/style';
 import RecruitImg from '../../../public/assets/unity_sold_out_mo.webp';
 import Image from 'next/image';
 

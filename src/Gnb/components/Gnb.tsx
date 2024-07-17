@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Logo from '../../../public/assets/newLogo.a1d35235.svg';
-import * as S from '@/Curriculums/style';
+import * as S from '@/Curriculum/style';
 
 function MenuIcon() {
   return (
