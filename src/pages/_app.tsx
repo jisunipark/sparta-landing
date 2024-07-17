@@ -9,12 +9,6 @@ const globalStyles = css`
     font-family: Pretendard; /* TODO 이거 들어가 있는 다른 부분들 지우기 */
   }
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-
   a {
     color: inherit;
     text-decoration: none;
