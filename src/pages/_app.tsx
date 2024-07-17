@@ -6,6 +6,7 @@ const globalStyles = css`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Pretendard; /* TODO 이거 들어가 있는 다른 부분들 지우기 */
   }
 
   body {
