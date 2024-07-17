@@ -4,13 +4,13 @@ export const Lnb = styled.nav`
   position: sticky;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2px;
   border-bottom: 1px solid rgb(215, 224, 230);
   background-color: white;
-  overflow-x: scroll;
-  padding: 10px 16px 0px;
+  padding: 10px 0px 0px;
   top: 0px;
-  z-index: 20;
+  z-index: 10;
 `;
 
 export const LnbItem = styled.div`
@@ -36,6 +36,7 @@ export const LnbItem = styled.div`
     color: rgb(157, 167, 174);
     border-radius: 10px;
     position: relative;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
       color: rgb(58, 62, 65);
