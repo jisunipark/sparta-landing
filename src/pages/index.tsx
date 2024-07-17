@@ -1,7 +1,7 @@
-import Details from '@/Curriculum/components/Details';
-import Gnb from '@/Curriculum/components/Gnb';
-import Hero from '@/Curriculum/components/Hero';
-import Lnb from '@/Curriculum/components/Lnb';
+import Details from '@/Project/Details';
+import Hero from '@/Hero/components/Hero';
+import Lnb from '@/Lnb/components/Lnb';
+import Gnb from '@/Gnb/components/Gnb';
 
 export default function Home() {
   return (
