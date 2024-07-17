@@ -6,7 +6,6 @@ export default function CurriculumDetail({ details }: { details: CurriculumDetai
     <S.DetailBox>
       {details.map((detail, index) => {
         const { subheading, title, goals } = detail;
-
         return (
           <S.DetailItem key={index}>
             <div>
