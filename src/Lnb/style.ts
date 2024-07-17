@@ -13,7 +13,11 @@ export const Lnb = styled.nav`
   z-index: 10;
 `;
 
-export const LnbItem = styled.div`
+type LnbItemProps = {
+  isActive: boolean;
+};
+
+export const LnbItem = styled.div<LnbItemProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,23 +36,22 @@ export const LnbItem = styled.div`
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    /* color: rgb(255, 108, 122); */
-    color: rgb(157, 167, 174);
+    color: ${(props) => (props.isActive ? 'rgb(255, 108, 122)' : 'rgb(157, 167, 174)')};
     border-radius: 10px;
     position: relative;
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      color: rgb(58, 62, 65);
-      background-color: rgb(242, 246, 248);
-    }
+      ${(props) =>
+        props.isActive ||
+        'color: rgb(58, 62, 65); background-color: rgb(242, 246, 248); & + div {background-color: white;}'}
+    } /* 가독성이 영.. */
   }
 
   & > div {
     width: 100%;
     height: 2px;
-    /* background-color: rgb(255, 108, 122); */
-    background-color: white;
+    background-color: ${(props) => (props.isActive ? 'rgb(255, 108, 122)' : 'white')};
     opacity: 1;
   }
 `;

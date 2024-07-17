@@ -49,8 +49,7 @@ export const HeroTitle = styled.h1`
   }
 `;
 
-export const Button = styled.button`
-  z-index: 10;
+export const Cta = styled.button`
   font-family: Pretendard;
   font-weight: 600;
   font-size: ${calcRem(16)};

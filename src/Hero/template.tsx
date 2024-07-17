@@ -16,7 +16,7 @@ export default function Hero() {
           <br />
           <span>4개월</span>만에 현실로
         </S.HeroTitle>
-        <S.Button>참가 신청하기</S.Button>
+        <S.Cta>참가 신청하기</S.Cta>
       </S.TitleSection>
       <S.CardWrapper>
         <S.HeroCards>
