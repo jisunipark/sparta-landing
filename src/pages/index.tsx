@@ -1,3 +1,4 @@
+import Banner from '@/Banner/template';
 import Gnb from '@/Gnb/template';
 import Hero from '@/Hero/template';
 import IntroduceTrack from '@/IntroduceTrack/template';
@@ -12,6 +13,7 @@ export default function Home() {
       <Lnb />
       <Details />
       <IntroduceTrack />
+      <Banner />
     </>
   );
 }
