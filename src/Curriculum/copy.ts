@@ -1,14 +1,18 @@
-export const curriculumDetails: {
+export type CurriculumDetails = {
+  subheading?: string;
+  title: string;
+  goals: string[];
+}[];
+
+export type Curriculum = {
   id: string;
   title: string;
   description: string;
   tag: string[];
-  details: {
-    subheading?: string;
-    title: string;
-    goals: string[];
-  }[][];
-}[] = [
+  details: CurriculumDetails[];
+};
+
+export const curriculums: Curriculum[] = [
   {
     id: '01',
     title: '웹 개발 미니 프로젝트',
