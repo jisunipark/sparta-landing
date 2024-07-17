@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image';
-import MobileCard0 from '../../public/assets/mo_card_0.png';
-import MobileCard1 from '../../public/assets/mo_card_1.png';
+import MobileCard00 from '../../public/assets/mo_card_0.png';
+import MobileCard01 from '../../public/assets/mo_card_1.png';
 import MobileCard02 from '../../public/assets/mo_card_2.png';
 import MobileCard03 from '../../public/assets/mo_card_3.png';
 
@@ -16,4 +16,13 @@ export const heroInfo: HeroInfoItem[] = [
   { label: '모집 마감', value: '24.08.02(금)' },
 ];
 
-export const heroCards: StaticImageData[] = [MobileCard0, MobileCard1, MobileCard02, MobileCard03];
+export const heroCards: StaticImageData[] = [
+  MobileCard00,
+  MobileCard01,
+  MobileCard02,
+  MobileCard03,
+  MobileCard00,
+  MobileCard01,
+  MobileCard02,
+  MobileCard03,
+];

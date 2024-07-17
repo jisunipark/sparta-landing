@@ -1,9 +1,10 @@
 import Image from 'next/image';
-import { heroCards, heroInfo } from '@/Hero/copy';
+import { heroInfo } from '@/Hero/copy';
+import { HeroInfo } from '@/Hero/components/HeroInfo';
+import AnimatedHeroCards from '@/Hero/components/AnimatedHeroCards';
 import HeroLogos from '../../public/assets/game_hero_logos.png';
 import HeroBackground from '../../public/assets/hero_mo_grid.png';
 import * as S from '@/Hero/style';
-import { HeroInfo } from '@/Hero/components/HeroInfo';
 
 export default function Hero() {
   return (
@@ -18,13 +19,7 @@ export default function Hero() {
         </S.HeroTitle>
         <S.Cta>참가 신청하기</S.Cta>
       </S.TitleSection>
-      <S.CardWrapper>
-        <S.HeroCards>
-          {heroCards.map((card, index) => (
-            <Image key={index} src={card} alt={'hero-card-' + index} width={135} height={141} />
-          ))}
-        </S.HeroCards>
-      </S.CardWrapper>
+      <AnimatedHeroCards />
       <S.InfoSection>
         <S.HeroInfo>
           {heroInfo.map((info) => (
