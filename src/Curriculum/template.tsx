@@ -4,7 +4,7 @@ import * as S from '@/Curriculum/style';
 
 export default function Curriculumn() {
   return (
-    <S.Background>
+    <S.Background id={'curriculum'}>
       <S.CurriculumSection>
         <h3>상세 커리큘럼</h3>
         <h2>
@@ -19,20 +19,4 @@ export default function Curriculumn() {
       </S.CurriculumSection>
     </S.Background>
   );
-}
-
-{
-  /* <S.CurriculumItem key={index}>
-              <S.CurriculumItemNumber>{id}</S.CurriculumItemNumber>
-              <S.CurriculumItemTitle>{title}</S.CurriculumItemTitle>
-              <S.CurriculumItemDesc>{description}</S.CurriculumItemDesc>
-              {tag.map((tag, index) => (
-                <S.CurriculumItemTag key={index}>{tag}</S.CurriculumItemTag>
-              ))}
-              {details.map((detail, index) => {
-                return detail.map((subDetail, index) => {
-                  return
-                });
-              }}
-            </S.CurriculumItem> */
 }

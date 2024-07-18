@@ -5,7 +5,7 @@ import * as S from '@/IntroduceTrack/style';
 
 export default function IntroduceTrack() {
   return (
-    <S.Background>
+    <S.Background id={'introduceTrack'}>
       <S.IntoduceTrackSection>
         <div>
           <h3>왜 게임 서버 개발자인가요?</h3>

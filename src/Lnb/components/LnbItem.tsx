@@ -1,4 +1,6 @@
+import { lnbItemId } from '@/Lnb/copy';
 import * as S from '@/Lnb/style';
+import Link from 'next/link';
 
 export default function LnbItem({
   isActive,
@@ -9,12 +11,16 @@ export default function LnbItem({
   onClick: (item: string) => void;
   children: string;
 }) {
-  const handleItemClick = () => onClick(children);
+  const handleItemClick = () => {
+    onClick(children);
+  };
 
   return (
-    <S.LnbItem isActive={isActive} onClick={handleItemClick}>
-      <span>{children}</span>
-      <div />
-    </S.LnbItem>
+    <Link href={lnbItemId[children]}>
+      <S.LnbItem isActive={isActive} onClick={handleItemClick}>
+        <span>{children}</span>
+        <div />
+      </S.LnbItem>
+    </Link>
   );
 }
