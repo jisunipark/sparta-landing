@@ -4,7 +4,7 @@ import Gnb from '@/Gnb/template';
 import Hero from '@/Hero/template';
 import IntroduceTrack from '@/IntroduceTrack/template';
 import Lnb from '@/Lnb/template';
-import Details from '@/Project/components/Details';
+import Project from '@/Project/template';
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Gnb />
       <Hero />
       <Lnb />
-      <Details />
+      <Project />
       <IntroduceTrack />
       <Banner />
       <Curriculumn />

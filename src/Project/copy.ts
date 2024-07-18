@@ -14,13 +14,14 @@ export type ProjectExample = {
   learnMore: string[];
 };
 
-export const ProjectExamples: ProjectExample[] = [
+export const projectExamples: ProjectExample[] = [
   {
     id: '01',
     title: '아이템 시뮬레이터 서비스',
     description:
       '현재 게임 아이템 상황 및 다른 사람들의 게임 아이템 상황을\n볼 수 있도록 정보를 제공하는 서비스',
-    video: '/Users/teamspartaesg/Desktop/sparta-landing/public/assets/resized_game_video_1.mp4',
+    video:
+      'https://static.spartacodingclub.kr/nbcamp/landing/gameLanding/gameServerProject/resized_game_video_1.mp4',
     techStack: stackImg01,
     learnMore: [
       '웹 프레임워크 - Node.js에서 가장 대표적인 웹 프레임워크인 Express.js 사용',
@@ -35,7 +36,8 @@ export const ProjectExamples: ProjectExample[] = [
     title: '데이터베이스 모델링',
     description:
       '로그인/인증 기능을 통해 게임 아이템 시뮬레이터 고도화\n(아이템 테이블과 유저 데이터베이스 모델링)',
-    video: '/Users/teamspartaesg/Desktop/sparta-landing/public/assets/resized_game_video_2.mp4',
+    video:
+      'https://static.spartacodingclub.kr/nbcamp/landing/gameLanding/gameServerProject/resized_game_video_2.mp4',
     techStack: stackImg02,
     learnMore: [
       '웹 프레임워크 - Node.js에서 가장 대표적인 웹 프레임워크인 Express.js 사용',
@@ -46,11 +48,12 @@ export const ProjectExamples: ProjectExample[] = [
     ],
   },
   {
-    id: '01',
+    id: '03',
     title: '타워 디펜스 게임',
     description:
       '실제 게임 서버를 구현하고 클라이언트 코드에 연결하기\n(인증/관리, WebSocket 통신, 클라이언트 연동)',
-    video: '/Users/teamspartaesg/Desktop/sparta-landing/public/assets/resized_game_video_3.mp4',
+    video:
+      'https://static.spartacodingclub.kr/nbcamp/landing/gameLanding/gameServerProject/resized_game_video_3.mp4',
     techStack: stackImg03,
     learnMore: [
       '게임 서버의 주요 기능인 회원가입, 로그인, 게임 데이터 관리 등을 설계',
