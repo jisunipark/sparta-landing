@@ -107,7 +107,6 @@ export const HeroTitle = styled.h1`
 `;
 
 export const Cta = styled.button`
-  font-family: Pretendard;
   font-weight: 600;
   font-size: ${calcRem(16)};
   line-height: ${calcRem(26)};
@@ -123,6 +122,7 @@ export const Cta = styled.button`
   flex-shrink: 0;
   margin-top: ${calcRem(8)};
   color: rgb(255, 255, 255) !important;
+  cursor: pointer;
 `;
 
 export const InfoSection = styled.section`

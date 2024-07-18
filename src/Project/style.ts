@@ -1,6 +1,10 @@
 import styled from '@emotion/styled';
 
 export const Background = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(20, 22, 23);
   width: 100%;
 `;
@@ -9,8 +13,10 @@ export const ProjectSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 40px;
   padding: 80px 0px;
+  width: 100%;
 
   h2 {
     font-weight: 700;
@@ -38,6 +44,7 @@ export const ProjectSection = styled.section`
     color: rgb(157, 167, 174) !important;
   }
 `;
+
 export const SoldoutContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -58,7 +65,9 @@ export const SoldoutContent = styled.div`
 export const ProjectExamples = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
+  width: 100%;
 `;
 
 export const ProjectItemWrapper = styled.div`
@@ -66,6 +75,9 @@ export const ProjectItemWrapper = styled.div`
   flex-direction: column;
   position: relative;
   width: 100%;
+  height: auto;
+  padding: 0 16px;
+  max-width: 600px;
   overflow: hidden;
   border-radius: 8px;
   transform: translateZ(0px);
@@ -126,7 +138,7 @@ export const LearnMoreWrapper = styled.div`
   border-radius: 12px;
   background: rgb(37, 40, 42);
   height: fit-content;
-  width: 600px;
+
   padding: 16px;
   display: flex;
   flex-direction: column;
