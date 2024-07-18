@@ -19,7 +19,9 @@ export default function Hero() {
         </S.HeroTitle>
         <S.Cta>참가 신청하기</S.Cta>
       </S.TitleSection>
-      <AnimatedHeroCards />
+      <div>
+        <AnimatedHeroCards />
+      </div>
       <S.InfoSection>
         <S.HeroInfo>
           {heroInfo.map((info) => (

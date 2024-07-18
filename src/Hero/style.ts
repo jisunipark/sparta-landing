@@ -1,6 +1,27 @@
+import { keyframes } from '@emotion/react';
 import styled from '@emotion/styled';
 
 export const calcRem = (px: number) => `${px / 16}rem`;
+
+const aniScroll = keyframes`
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+`;
+
+const aniScroll2 = keyframes`
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+`;
 
 export const Hero = styled.div`
   position: relative;
@@ -25,13 +46,48 @@ export const Hero = styled.div`
     aspect-ratio: auto 1024 / 656;
     height: 656px;
   }
+
+  ul:first-of-type {
+    animation: 12s linear 0s infinite normal none running ${aniScroll};
+  }
+
+  ul:last-of-type {
+    animation: 12s linear 0s infinite normal none running ${aniScroll2};
+  }
+`;
+
+export const TitleSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: ${calcRem(12)};
+  width: 100%;
+  margin-top: ${calcRem(120)};
+
+  & + div {
+    position: relative;
+    width: 100%;
+  }
+`;
+
+export const CardWrapper = styled.div`
+  position: absolute;
+  left: 0;
+  margin-top: 55px;
+  height: fit-content;
+  width: 100%;
 `;
 
 export const HeroCards = styled.ul`
+  position: absolute;
   display: flex;
+  width: max-content;
 
   & > img {
     margin-right: ${calcRem(7)};
+    width: 135px;
+    aspect-ratio: auto 135 / 141;
+    height: 141px;
   }
 `;
 
@@ -60,23 +116,12 @@ export const Cta = styled.button`
   width: ${calcRem(164)};
   height: ${calcRem(54)};
   padding: ${calcRem(16)} ${calcRem(20)};
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   gap: ${calcRem(10)};
   flex-shrink: 0;
   margin-top: ${calcRem(8)};
   color: rgb(255, 255, 255) !important;
-`;
-
-export const TitleSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: ${calcRem(12)};
-  width: 100%;
-  margin-top: ${calcRem(120)};
 `;
 
 export const InfoSection = styled.section`
@@ -117,8 +162,4 @@ export const HeroInfoItem = styled.div`
   span:nth-of-type(2) {
     color: rgb(215, 224, 230) !important;
   }
-`;
-
-export const CardWrapper = styled.div`
-  margin-top: ${calcRem(55)};
 `;
