@@ -1,10 +1,29 @@
+import Image from 'next/image';
 import ProjectItem from '@/Project/components/ProjectItem';
+import RecruitImg from '../../public/assets/unity_sold_out_mo.webp';
 import { projectExamples } from '@/Project/copy';
 import * as S from '@/Project/style';
 
 export default function Project() {
   return (
     <S.Background id={'project'}>
+      <S.ProjectSection>
+        <div>
+          <h3>누구나 시작할 수 있도록</h3>
+          <h2>
+            게임 업계 취업을 위한
+            <br /> 게임 서버 개발 부트캠프
+          </h2>
+        </div>
+        <S.SoldoutContent>
+          <Image src={RecruitImg} alt="recruit" width={328} height={234} />
+          <strong>
+            Node.js 게임 서버 개발자 국비부트캠프는
+            <br />
+            스파르타 내일배움캠프가 유일합니다.
+          </strong>
+        </S.SoldoutContent>
+      </S.ProjectSection>
       <S.ProjectSection>
         <div>
           <h3>프로젝트 예시</h3>
