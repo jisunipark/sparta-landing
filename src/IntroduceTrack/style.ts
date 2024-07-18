@@ -17,6 +17,7 @@ export const IntoduceTrackSection = styled.section`
   gap: 40px;
   padding: 80px 0;
   width: 100%;
+  overflow: hidden;
 
   h2 {
     font-style: normal;

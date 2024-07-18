@@ -35,6 +35,7 @@ export const Hero = styled.div`
     rgb(109, 119, 207) 0%,
     rgb(20, 22, 23) 85.5%
   );
+  overflow: hidden;
 
   & > img {
     position: absolute;

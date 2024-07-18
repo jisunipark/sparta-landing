@@ -1,7 +1,12 @@
 import styled from '@emotion/styled';
 
-export const Gnb = styled.nav`
+type GnbProps = {
+  isVisible: boolean;
+};
+
+export const Gnb = styled.nav<GnbProps>`
   position: fixed;
+  transform: ${(props) => (props.isVisible ? 'translateY(0)' : 'translateY(-100%)')};
   top: 0;
   left: 0;
   right: 0;
